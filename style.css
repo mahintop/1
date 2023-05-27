@@ -1,0 +1,34 @@
+body{
+  background-image: url(bg.jpg);
+  background-color: blanchedalmond;
+  color: green;
+}
+p{
+  
+  text-shadow: 15px;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 5px;
+  outline-width: 3px;
+  outline-style: solid;
+  text-align: center;
+  text-transform: capitalize;
+  text-indent: 25px;
+  letter-spacing: 2px;
+  
+}
+.fa-brands{
+  font-size: 50px;
+  color: blue;
+}
+a{
+ text-align: center;
+  color: green;
+  text-decoration: none;
+  background-color: orange;
+  display: block;
+}
+.tota{
+  border: 3px
+  
+}
