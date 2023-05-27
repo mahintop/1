@@ -27,6 +27,7 @@ a{
   text-decoration: none;
   background-color: orange;
   display: block;
+  border-radius: 10px;
 }
 .tota{
   border: 3px
