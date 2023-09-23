@@ -1,21 +1,78 @@
+
 <!DOCTYPE html>
 <html>
-
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Link Downloader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f2f2f2;
+    }
+    
+    h1 {
+      margin-top: 50px;
+    }
+    
+    .download-container {
+      margin-top: 20px;
+    }
+    
+    .download-container input[type="text"] {
+      width: 500px;
+      height: 40px;
+      margin-right: 10px;
+      padding: 5px;
+      font-size: 16px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    
+    .download-container button {
+      height: 40px;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+    
+    .download-container button:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <script>
+    function downloadFile() {
+      // Get the link from the input field
+      var link = document.getElementById("linkInput").value;
+      
+      // Create a temporary anchor element 
+      var downloadLink = document.createElement("a");
+      
+      // Set the href attribute of the anchor element to the link to be downloaded
+      downloadLink.href = link;
+      
+      // Set the download attribute to specify a default file name for the link
+      downloadLink.download = "downloaded_file";
+      
+      // Append the anchor element to the document body
+      document.body.appendChild(downloadLink);
+      
+      // Programmatically click on the anchor element to trigger the download
+      downloadLink.click();
+      
+      // Remove the anchor element from the document body after the download is initiated
+      document.body.removeChild(downloadLink);
+    }
+  </script>
 </head>
-
 <body>
-  <div id="container">
-    <h1>Paste Link and Download</h1>
-    <form id="download-form">
-      <label for="link-input">Paste Link:</label>
-      <input type="text" id="link-input" name="link-input" placeholder="Enter the link">
-      <button type="submit">Download</button>
-    </form>
+  <h1>Link Downloader</h1>
+  
+  <div class="download-container">
+    <input type="text" id="linkInput" placeholder="Paste link here">
+    <button onclick="downloadFile()">Download</button>
   </div>
-
-  <script src="script.js"></script>
 </body>
-
 </html>
