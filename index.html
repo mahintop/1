@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Anime ON Demand</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="anime_logo.png" alt="Anime Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#anime-list">Anime List</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#about">About</a></li>
+        <h3>Fantasy</h3>
+         <ul id="fantasy-animes" class="hidden">
+        <li>Anime 1</li>
+        <li>Anime 2</li>
+        <li>Anime 3</li>
+      </ul>
+      </ul>
+    </nav>
+  </header>
+ 
+  <div class="video-list">
+    <div class="video-item">
+      <img src="images/Jujutsu Kaisen.jpg" alt="Jujutsu Kaisen">
+      <h3>Jujutsu Kaisen</h3>
+    </div>
+    <div class="video-item">
+      <img src="/images/Solo Leveling.jpg" alt="Solo Leveling">
+      <h3Solo Leveling</h3>
+    </div>
+    <div class="video-item">
+      <img src="images/MASHLE_ MAGIC AND MUSCLES.jpg" alt="Anime Thumbnail 3">
+      <h3>MASHLE: MAGIC AND MUSCLES</h3>
+    </div>
+    </div>
+    <div class="video-item">
+      <img src="images/The Daily Life of the Immortal King.jpg" alt="Anime Thumbnail 3">
+      <h3>The Daily Life of the Immortal King</h3>
+    </div>
+   
+  <script>
+    function adjustHeaderSize() {
+      const header = document.querySelector('header');
+      const logo = document.querySelector('.logo');
+      const nav = document.querySelector('nav');
+
+      const headerHeight = logo.offsetHeight > nav.offsetHeight ? logo.offsetHeight : nav.offsetHeight;
+      header.style.height = `${headerHeight}px`;
+    }
+
+    window.addEventListener('resize', adjustHeaderSize);
+    adjustHeaderSize(); // Call the function initially to set the initial size
+  </script>
+  <script src="js/index.js"></script>
+</body>
+</html>
