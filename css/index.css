@@ -104,7 +104,8 @@ nav ul li a:hover {
 	width:100%;
 }
 .video-item {
-  width: 150px;
+  width: 200px;
+height:270px;	
   margin: 20px 10px;
   background-color: #fff;
   border-radius: 5px;
