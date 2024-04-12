@@ -100,7 +100,7 @@ nav ul li a:hover {
 }
 
 
-.productSection {
+.videosk {
 	width: 85%;
 	background-color: #FFFFFF;
 	box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
@@ -115,4 +115,23 @@ nav ul li a:hover {
 	border-radius: 10px;
 
 
+}
+.video-list{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 10px 0px;
+	width:100%;
+}
+.video-item{
+	width:250px;
+	height: 330px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 8px;
+	position: relative;
+	margin: 10px 30px;
 }
