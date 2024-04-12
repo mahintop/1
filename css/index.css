@@ -103,17 +103,18 @@ nav ul li a:hover {
 	margin: 10px 0px;
 	width:100%;
 }
-.video-item{
-	width:250px;
-	height: 330px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	border-radius: 8px;
-	position: relative;
-	margin: 10px 30px;
+.video-item {
+  width: 150px;
+  margin: 20px 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
 }
+
 .video-item img {
-	height: 180px;
+  width: 100%;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
