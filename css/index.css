@@ -104,8 +104,8 @@ nav ul li a:hover {
 	width:100%;
 }
 .video-item{
-	width:250px;
-	height: 330px;
+	width:200px;
+	height: 270px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
