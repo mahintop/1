@@ -40,28 +40,7 @@ nav ul li a {
 nav ul li a:hover {
   color: #e74c3c;
 }
-.video-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
-}
 
-.video-item {
-  width: 150px;
-  margin: 20px 10px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding: 10px;
-}
-
-.video-item img {
-  width: 100%;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-}
 .iconArea{
 	position:fixed;
 	left: 30px;
