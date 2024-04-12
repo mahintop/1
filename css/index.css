@@ -99,3 +99,11 @@ nav ul li a:hover {
 	color: 	#FF0000;
 }
 
+.section1{
+  position:absolute;
+  left:15%;
+  top: 50%;
+  transform: translate(-15%,-50%);
+}
+.section1 img {
+  height: 300px;
