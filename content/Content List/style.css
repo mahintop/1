@@ -1,0 +1,56 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+#search-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search-box {
+    width: 40%;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#search-box:focus {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#anime-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.anime-img {
+  width: 30%;
+  height: auto;
+}
+#tite {
+  text-decoration: none;
+  
+}
+
+#anime-list li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+#anime-list li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
