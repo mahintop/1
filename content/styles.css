@@ -71,11 +71,12 @@ body {
     }
 .download button[type='button'] {
   background: #36a420;
-  border: 1px solid #36a420;
+  border: 2px solid #36a420;
   color: #fff;
   font-weight: bold;
   cursor: pointer;
   border-radius: 6px;}
    .download a {
      text-decoration: none;
+     color: #fff;
    }
