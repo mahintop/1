@@ -16,9 +16,12 @@ header {
 }
 
 /* Default styles */
-.logo {
-  text-align: center;
+
+.logo img {
+  height: 50px;
+  width: auto;
 }
+
 
 nav {
   text-align: center;
