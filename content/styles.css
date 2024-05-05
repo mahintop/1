@@ -79,15 +79,3 @@ body {
    .download a {
      text-decoration: none;
    }
-
-/* Styles for mobile */
-@media screen and (max-width: 600px) {
-  nav {
-    flex-direction: column;
-  }
-
-  nav a {
-    margin-bottom: 10px;
-    margin-right: 0;
-  }
-}
