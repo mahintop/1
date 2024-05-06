@@ -33,50 +33,89 @@ body {
             background-color: #555;
         }
     
+#video-container {
+    width: 96%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 6px;
+    border-radius: 9px;
+    background-color: rgba(255, 0, 0, 0.0);
+}
+
+#video-player {
+    border: 2px solid #e2ae0cff;
+    border-radius: 9px;
+    background-color: rgba(255, 0, 0, 0.0);
+}
+
+#playlist-container {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#playlist {
+    padding: 10px;
+    text-align: center;
+}
+
+.video-item {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;    
+}
+
+.download button[type='button'] {
+    background: #36a420;
+    border: 2px solid #36a420;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.download a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Responsive styles for PC */
+@media (min-width: 768px) {
     #video-container {
-        width: 96%;
-        max-width: 600px;
-        margin: 0 auto;
-        padding-top: 6px;
-        border-radius: 9px;
-        background-color: rgba(255, 0, 0, 0.0);
-    }
-    #video-player {
-      border: 2px solid #e2ae0cff;
-      border-radius: 9px;
-      background-color: rgba(255, 0, 0, 0.0);
+        max-width: 800px; /* Larger max-width for wider screens */
     }
 
     #playlist-container {
-        max-height: 200px;
-        overflow-y: auto;
-        border: 1px solid #ccc;
-        border-radius: 5px;
+        max-height: 300px; /* Increased max-height for better visibility */
     }
-    
-    #playlist {
-        padding: 10px;
-        text-align: center;
-    }
-    
+
     .video-item {
-        cursor: pointer;
-        padding: 10px;
-        margin: 5px 0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        display: flex;
-        text-align: center;
-        justify-content: space-between;    
+        padding: 15px; /* Increased padding for better spacing */
+        margin: 10px 0; /* Increased margin for better spacing */
     }
-.download button[type='button'] {
-  background: #36a420;
-  border: 2px solid #36a420;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 6px;}
-   .download a {
-     text-decoration: none;
-     color: #fff;
-   }
+
+    .download button[type='button'] {
+        font-size: 1rem; /* Adjust font size for better readability */
+        padding: 10px 20px; /* Increased padding for a larger button */
+    }
+}
+
+@media (min-width: 1024px) {
+    #video-container {
+        max-width: 960px; /* Even larger max-width for desktop screens */
+    }
+
+    #video-player, #playlist-container {
+        border: 2px solid #ccc; /* Thicker border for better aesthetics */
+    }
+
+    .video-item {
+        align-items: center; /* Align items in the center for a better layout */
+    }
+}
