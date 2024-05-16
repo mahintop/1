@@ -45,6 +45,7 @@ body {
 #video-player {
     border: 2px solid #e2ae0cff;
     border-radius: 9px;
+    height: 260px;
     background-color: rgba(255, 0, 0, 0.0);
 }
 
@@ -89,6 +90,11 @@ body {
 @media (min-width: 768px) {
     #video-container {
         max-width: 800px; /* Larger max-width for wider screens */
+    }
+   #video-player {
+    height: 550px;
+    max-height: 600px;
+
     }
 
     #playlist-container {
