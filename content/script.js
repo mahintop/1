@@ -12,4 +12,15 @@ const videoPlayer = document.getElementById('video-player');
                                                                 videoPlayer.src = videoSrc;
                                                                         });
                                                                             });
-                                                                            
+var correctPin = "2652"; // Replace with your pin
+
+function checkPin() {
+    var pinInput = document.getElementById('pin-input').value;
+  
+    if (pinInput === correctPin) {
+        document.getElementById('pin-auth').style.display = "none";
+        document.getElementById('content').style.display = "block";
+    } else {
+        alert("Incorrect PIN. Please try again.");
+    }
+}
