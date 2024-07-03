@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <a id="downloadLink" class="button" href="#" onclick="startTimer(event)">Download</a>
+        <div id="timer" class="timer" style="display:none;">
+            <div class="inner-timer">
+                Your download will start in <span id="countdown">5</span> seconds...
+            </div>
+        </div>
+        <a id="actualDownload" class="button" href="your-file-url" style="display:none;">Click here if the download doesn't start automatically</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
