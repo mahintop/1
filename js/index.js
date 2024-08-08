@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener('click', function() {
             const postContent = this.previousElementSibling;
             postContent.classList.toggle('expanded');
-            this.textContent = postContent.classList.contains('expanded') ? 'See Less' : 'See Full Text';
+            this.textContent = postContent.classList.contains('expanded') ? 'See Less' : 'See More';
         });
     });
 });
